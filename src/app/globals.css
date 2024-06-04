@@ -1,0 +1,196 @@
+/* CSS RESET - Alvin Varghese */
+/* https://github.com/alvin1904 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
+  height: 100%;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  text-rendering: optimizeSpeed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  /* transition: all ease-in-out 250ms; */
+}
+a,
+button {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+}
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+  border-style: none;
+}
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+input,
+textarea {
+  all: unset;
+  -webkit-user-select: auto;
+  user-select: auto;
+  outline-color: transparent;
+  border: 0;
+}
+textarea {
+  white-space: revert;
+}
+::placeholder {
+  color: unset;
+}
+:focus {
+  outline: 0;
+}
+:where([hidden]) {
+  display: none;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.text-center {
+  text-align: center;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-half {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.w-screen {
+  width: 100dvw;
+}
+.h-screen {
+  height: 100dvh;
+}
+.bg-red {
+  background: red;
+}
+.underline {
+  text-decoration: underline;
+}
+.leading-none{
+  line-height: 100%;
+}
+
+:root {
+  --accent: #fd5f5f;
+}
+
+*::selection {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+*::-moz-selection {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.personal_section {
+  padding: 80px 20px;
+  width: 100%;
+}
+.personal_container {
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 40px;
+}
+.middle{
+  min-width: 260px;
+}
+.middle img {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+.icon {
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.name {
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+.surname {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.cto {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: white;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+.cto:hover, .icon:hover {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+@media (min-width: 768px) {
+  .personal_section {
+    padding: 50px 50px;
+    position: fixed;
+    width: 500px;
+  }
+  .middle{
+    min-width: 310px;
+  }
+  .data_section{
+    padding: 20px 50px;
+    padding-left: 500px;
+  }
+}
