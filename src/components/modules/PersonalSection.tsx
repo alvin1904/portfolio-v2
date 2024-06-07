@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Github, Linkedin } from "../Icons";
-import { scothBrace } from "@/app/layout";
 import cn from "@/lib/utils/cn";
 import Link from "next/link";
+import { scothBrace } from "@/app/fonts";
 
 const PersonalSection = () => {
   return (

@@ -1,6 +1,6 @@
 import { ChildrenPropType } from "@/types/common.types";
 import IconTitle from "@/components/modules/IconTitle";
-import { scothBrace } from "@/app/layout";
+import { scothBrace } from "@/app/fonts";
 
 const Services = () => {
   type Props = {

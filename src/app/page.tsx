@@ -5,6 +5,7 @@ import Skills from "@/components/pages/Skills";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import PersonalSection from "@/components/modules/PersonalSection";
 import { ChildrenPropType } from "@/types/common.types";
+import Projects from "@/components/pages/Projects";
 
 export default function Home() {
   const Wrapper = (props: ChildrenPropType) => (
@@ -27,6 +28,9 @@ export default function Home() {
         </Wrapper>
         <Wrapper>
           <Skills />
+        </Wrapper>
+        <Wrapper>
+          <Projects />
         </Wrapper>
       </div>
     </SmoothScrolling>
