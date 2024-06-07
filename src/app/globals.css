@@ -132,7 +132,8 @@ body {
   --border: rgb(115, 115, 115);
 }
 .shadow:hover {
-  box-shadow: var(--accent-transparent) 0px 10px 36px 0px,
+  box-shadow:
+    var(--accent-transparent) 0px 10px 36px 0px,
     var(--accent-transparent) 0px 0px 0px 1px;
 }
 .smoothen {
@@ -275,6 +276,6 @@ body {
     font-size: 4rem;
   }
 }
-.about_heading{
+.about_heading {
   font-size: 1.75rem;
 }
