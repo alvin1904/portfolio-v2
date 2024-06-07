@@ -1,11 +1,12 @@
 import ScrollingSection from "@/components/ScrollingSection";
+import SmoothScrolling from "@/components/SmoothScrolling";
 import PersonalSection from "@/components/modules/PersonalSection";
 
 export default function Home() {
   return (
-    <main className="main">
+    <SmoothScrolling>
       <PersonalSection />
       <ScrollingSection />
-    </main>
+    </SmoothScrolling>
   );
 }

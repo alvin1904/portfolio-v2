@@ -11,7 +11,7 @@ const Introduce = () => {
         Hey I am <span className="colorize">Alvin Varghese</span>, Web Developer
       </h1>
       <p className="subheading lighten ySpace">
-        I design and code beautiful websites for fun and work. Just what i enjoy
+        I design and code beautiful websites for fun and work. Just what I enjoy
         and love doing!
       </p>
       <div className="ySpace count_section flex flex-row gap-1 items-center">

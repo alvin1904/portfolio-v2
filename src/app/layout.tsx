@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ChildrenPropType } from "@/types/common.types";
+import "./scroll.css"
 import "./globals.css";
 
 export const metadata: Metadata = {

@@ -20,7 +20,6 @@ body {
   margin: 0;
   padding: 0;
   font: inherit;
-  /* transition: all ease-in-out 250ms; */
 }
 a,
 button {
@@ -128,7 +127,16 @@ body {
 
 :root {
   --accent: #fd5f5f;
+  --accent-hover: #ff8080;
+  --accent-transparent: #fd5f5f85;
   --border: rgb(115, 115, 115);
+}
+.shadow:hover {
+  box-shadow: var(--accent-transparent) 0px 10px 36px 0px,
+    var(--accent-transparent) 0px 0px 0px 1px;
+}
+.smoothen {
+  transition: all 0.25s ease-in-out;
 }
 
 *::selection {
@@ -140,6 +148,14 @@ body {
   background: var(--accent);
   color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-button {
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
 }
 .border-1 {
   border: 1px solid var(--border);
@@ -164,7 +180,7 @@ body {
 }
 .personal_container {
   border-radius: 20px;
-  padding: 45px 30px;
+  padding: 30px 30px;
 }
 .middle {
   min-width: 260px;
@@ -215,6 +231,7 @@ body {
 }
 .section_yPadding {
   padding-left: 60px;
+  padding-bottom: 60px;
 }
 .icon_title {
   background: #000;
@@ -222,6 +239,11 @@ body {
   padding: 10px 25px;
   border-radius: 20px;
   gap: 0.5rem;
+  user-select: none;
+}
+.icon_title:hover {
+  background: var(--accent);
+  border-color: var(--accent);
 }
 .icon_title p {
   font-size: 0.8rem;

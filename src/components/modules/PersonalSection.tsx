@@ -36,14 +36,16 @@ const PersonalSection = () => {
           <span>Based in /India/Kerala</span>
         </div>
         <div className="bottom flex flex-col items-center justify-center w-full text-center gap-1">
-          <div className="leading-none lighten">2024 Alvin. All Rights Reserved</div>
+          <div className="leading-none lighten">
+            2024 Alvin. All Rights Reserved
+          </div>
           <div className="flex flex-row items-center w-full justify-center gap-1">
             <Link
               target="_blank"
               href={
                 process.env.NEXT_PUBLIC_LINKEDIN || "https://www.linkedin.com"
               }
-              className="border-1 icon"
+              className="border-1 icon shadow smoothen"
               aria-label="LinkedIn - Alvin Varghese"
             >
               <Linkedin />
@@ -54,13 +56,13 @@ const PersonalSection = () => {
               href={
                 process.env.NEXT_PUBLIC_LINKEDIN || "https://www.github.com"
               }
-              className="border-1 icon"
+              className="border-1 icon shadow smoothen"
               aria-label="Github - Alvin Varghese"
             >
               <Github />
             </Link>
           </div>
-          <Link href="#contact" className="cto">
+          <Link href="#contact" className="cto smoothen">
             Tell Me Something!
           </Link>
         </div>

@@ -35,7 +35,7 @@ const sectionIcons: SectionIconMap = {
 const IconTitle = (props: IconTitleProps) => {
   const SelectedIcon = sectionIcons[props.variant];
   return (
-    <div className="icon_title border-1 flex flex-row items-center justify-center ySpace">
+    <div className="icon_title smoothen border-1 flex flex-row items-center justify-center ySpace shadow">
       <span>{SelectedIcon && <SelectedIcon />}</span> <p>{props.variant}</p>
     </div>
   );
