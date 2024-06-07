@@ -62,7 +62,7 @@ const PersonalSection = () => {
               <Github />
             </Link>
           </div>
-          <Link href="#contact" className="cto smoothen">
+          <Link href="#Contact" className="cto smoothen">
             Tell Me Something!
           </Link>
         </div>

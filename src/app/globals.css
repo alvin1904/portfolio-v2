@@ -167,7 +167,7 @@ body {
   color: var(--accent);
 }
 .ySpace {
-  margin: 50px 0;
+  margin: 45px 0;
 }
 .transparent {
   background: transparent;
@@ -230,8 +230,8 @@ body {
   }
 }
 .section_yPadding {
-  padding-left: 60px;
-  padding-bottom: 60px;
+  padding: 30px;
+  padding-top: 0px;
 }
 .icon_title {
   background: #000;
@@ -251,17 +251,30 @@ body {
   text-transform: uppercase;
 }
 .heading {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .subheading {
-  font-size: 1.25rem;
-  width: 40%;
+  font-size: 1.15rem;
   line-height: 1.5rem;
 }
 .count span {
   font-size: 5rem;
   color: var(--accent);
 }
-.count p {
-  width: 70%;
+@media (min-width: 768px) {
+  .w-40 {
+    width: 40%;
+  }
+  .count p {
+    width: 70%;
+  }
+  .section_yPadding {
+    padding: 60px;
+  }
+  .heading {
+    font-size: 4rem;
+  }
+}
+.about_heading{
+  font-size: 1.75rem;
 }
