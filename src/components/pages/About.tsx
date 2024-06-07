@@ -1,5 +1,6 @@
 import Link from "next/link";
 import IconTitle from "@/components/modules/IconTitle";
+import { CheckCheck, PDF } from "../Icons";
 
 const About = () => {
   return (
@@ -26,6 +27,27 @@ const About = () => {
         while embracing challenges and constantly improving to stay ahead in
         this dynamic tech landscape.
       </p>
+      <div className="ySpace flex flex-col_mobile gap-half items-center justify-between subheading">
+        <div className="lighten">Btw, here is my resume for download:</div>
+        <Link
+          className="pdf_send"
+          href={process.env.NEXT_PUBLIC_RESUME || ""}
+          target="_blank"
+          draggable={false}
+        >
+          <div className="pdf_details flex flex-row gap-half items-center">
+            <PDF />
+            <div className="flex flex-col">
+              <h3>alvin_varghese_resume.pdf</h3>
+              <p className="pdf_p">PDF • 158kB</p>
+            </div>
+          </div>
+          <div className="pdf_time flex flex-row gap-half items-center">
+            <p className="pdf_p">2:22 pm</p>
+            <CheckCheck />
+          </div>
+        </Link>
+      </div>
     </>
   );
 };

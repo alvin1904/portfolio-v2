@@ -124,12 +124,27 @@ body {
 .text-right {
   text-align: right;
 }
+.flex-col_mobile {
+  flex-direction: column;
+}
+.flex-row_mobile {
+  flex-direction: row;
+}
+@media (min-width: 1200px) {
+  .flex-col_mobile {
+    flex-direction: row;
+  }
+  .flex-row_mobile {
+    flex-direction: column;
+  }
+}
 
 :root {
   --accent: #fd5f5f;
-  --accent-hover: #ff8080;
   --accent-transparent: #fd5f5f85;
   --accent-transparent-high: #fd5f5f20;
+  --accent-hover: #ff8080;
+  --accent-dark: #7d3535;
   --border: rgb(115, 115, 115);
 }
 .shadow:hover {
@@ -223,7 +238,7 @@ body {
   color: var(--accent);
   border-color: var(--accent);
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .personal_section {
     padding: 50px 50px;
     position: fixed;
@@ -268,7 +283,7 @@ body {
   font-size: 5rem;
   color: var(--accent);
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .w-40 {
     width: 40%;
   }
@@ -335,7 +350,33 @@ body {
   left: 101%;
   top: -0.6rem;
 }
-@media (min-width: 768px) {
+.pdf_send {
+  width: 310px;
+  cursor: pointer;
+  background: var(--accent-transparent);
+  border-radius: 8px;
+  padding: 2px;
+}
+.pdf_details {
+  background: var(--accent-transparent-high);
+  border-radius: 8px;
+  padding: 10px;
+  padding-bottom: 5px;
+  user-select: none;
+}
+.pdf_details h3 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.pdf_p {
+  font-size: 0.75rem;
+  opacity: 60%;
+}
+.pdf_time {
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+@media (min-width: 1200px) {
   .skill_item {
     width: calc(50% - 1rem);
   }
