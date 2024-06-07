@@ -16,7 +16,7 @@ const About = () => {
         Now, I integrate my design background into development to create unique,
         high-quality solutions.
       </p>
-      <p className="subheading lighten ySpace">
+      <p className="subheading lighten">
         On my{" "}
         <Link className="colorize underline" href="#Portfolio">
           portfolio

@@ -235,7 +235,6 @@ body {
   padding-top: 0px;
 }
 .icon_title {
-  background: #000;
   width: fit-content;
   padding: 10px 25px;
   border-radius: 20px;
@@ -278,4 +277,25 @@ body {
 }
 .about_heading {
   font-size: 1.75rem;
+}
+.services_container {
+  flex-wrap: wrap;
+}
+.services_card {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  padding: 40px;
+  user-select: none;
+}
+.services_card h2 {
+  font-size: 1.25rem;
+}
+.services_card p {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+.services_card:hover {
+  border-color: var(--accent);
+  color: var(--accent-hover);
 }
