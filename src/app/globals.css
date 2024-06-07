@@ -129,6 +129,7 @@ body {
   --accent: #fd5f5f;
   --accent-hover: #ff8080;
   --accent-transparent: #fd5f5f85;
+  --accent-transparent-high: #fd5f5f20;
   --border: rgb(115, 115, 115);
 }
 .shadow:hover {
@@ -138,6 +139,12 @@ body {
 }
 .smoothen {
   transition: all 0.25s ease-in-out;
+}
+.showOnHover .itemToShow {
+  opacity: 0;
+}
+.showOnHover:hover .itemToShow {
+  opacity: 1;
 }
 
 *::selection {
@@ -289,13 +296,54 @@ body {
   user-select: none;
 }
 .services_card h2 {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
 }
 .services_card p {
-  font-size: 1.15rem;
-  line-height: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1rem;
 }
 .services_card:hover {
   border-color: var(--accent);
   color: var(--accent-hover);
+}
+.lighten_shade:hover #item {
+  color: white;
+}
+.skills_container {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.skill_item {
+  width: 100%;
+  border: 1px solid #ffffff40;
+  border-radius: 10px;
+  padding: 20px 10px;
+  padding-right: 20px;
+  user-select: none;
+}
+.skill_item:hover {
+  background: var(--accent-transparent-high);
+}
+.line {
+  height: 2px;
+  background: var(--accent-hover);
+  border-radius: 1px;
+  position: relative;
+}
+.percent {
+  position: absolute;
+  left: 101%;
+  top: -0.6rem;
+}
+@media (min-width: 768px) {
+  .skill_item {
+    width: calc(50% - 1rem);
+  }
+  .services_card p {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+  .services_card h2 {
+    font-size: 1.25rem;
+  }
 }
