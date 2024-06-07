@@ -1,5 +1,5 @@
 import Link from "next/link";
-import IconTitle from "./modules/IconTitle";
+import IconTitle from "@/components/modules/IconTitle";
 
 const About = () => {
   return (

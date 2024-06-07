@@ -27,7 +27,8 @@ const sectionIcons: SectionIconMap = {
   Introduce: Handshake,
   About: Briefcase,
   Resume: Biceps,
-  Services: Palette,
+  Services: Briefcase,
+  Skills: Palette,
   Portfolio: Portfolio,
   Contact: MailCheck,
 };

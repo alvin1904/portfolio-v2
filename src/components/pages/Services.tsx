@@ -1,5 +1,5 @@
 import { ChildrenPropType } from "@/types/common.types";
-import IconTitle from "./modules/IconTitle";
+import IconTitle from "@/components/modules/IconTitle";
 import { scothBrace } from "@/app/layout";
 
 const Services = () => {

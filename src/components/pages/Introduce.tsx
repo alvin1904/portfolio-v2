@@ -1,5 +1,5 @@
 import calculateExperience from "@/lib/utils/yearOfExperience";
-import IconTitle from "./modules/IconTitle";
+import IconTitle from "@/components/modules/IconTitle";
 
 const Introduce = () => {
   const yoi = calculateExperience();
