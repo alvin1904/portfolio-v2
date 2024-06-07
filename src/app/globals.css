@@ -119,12 +119,16 @@ body {
 .underline {
   text-decoration: underline;
 }
-.leading-none{
+.leading-none {
   line-height: 100%;
+}
+.text-right {
+  text-align: right;
 }
 
 :root {
   --accent: #fd5f5f;
+  --border: rgb(115, 115, 115);
 }
 
 *::selection {
@@ -137,17 +141,32 @@ body {
   color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
+.border-1 {
+  border: 1px solid var(--border);
+}
+.lighten {
+  color: var(--border);
+}
+.colorize {
+  color: var(--accent);
+}
+.ySpace {
+  margin: 50px 0;
+}
+.transparent {
+  background: transparent;
+  color: transparent;
+  border: 0;
+}
 .personal_section {
   padding: 80px 20px;
   width: 100%;
 }
 .personal_container {
-  border: 1px solid white;
-  border-radius: 40px;
-  padding: 40px;
+  border-radius: 20px;
+  padding: 45px 30px;
 }
-.middle{
+.middle {
   min-width: 260px;
 }
 .middle img {
@@ -157,7 +176,6 @@ body {
 }
 .icon {
   padding: 12px;
-  border: 1px solid white;
   border-radius: 50%;
 }
 .name {
@@ -175,7 +193,8 @@ body {
   border-radius: 20px;
   padding: 15px 30px;
 }
-.cto:hover, .icon:hover {
+.cto:hover,
+.icon:hover {
   background: transparent;
   color: var(--accent);
   border-color: var(--accent);
@@ -186,11 +205,41 @@ body {
     position: fixed;
     width: 500px;
   }
-  .middle{
+  .middle {
     min-width: 310px;
   }
-  .data_section{
+  .data_section {
     padding: 20px 50px;
     padding-left: 500px;
   }
+}
+.section_yPadding {
+  padding-left: 60px;
+}
+.icon_title {
+  background: #000;
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 20px;
+  gap: 0.5rem;
+}
+.icon_title p {
+  font-size: 0.8rem;
+  margin-top: 0.05rem;
+  text-transform: uppercase;
+}
+.heading {
+  font-size: 4rem;
+}
+.subheading {
+  font-size: 1.25rem;
+  width: 40%;
+  line-height: 1.5rem;
+}
+.count span {
+  font-size: 5rem;
+  color: var(--accent);
+}
+.count p {
+  width: 70%;
 }

@@ -1,7 +1,11 @@
+import Introduce from "./Introduce";
+
 const ScrollingSection = () => {
   return (
     <div className="data_section">
-      <div className="section_yPadding">hello world</div>
+      <div className="section_yPadding">
+        <Introduce />
+      </div>
     </div>
   );
 };
