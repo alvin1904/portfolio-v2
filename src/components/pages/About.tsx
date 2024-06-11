@@ -32,7 +32,7 @@ const About = () => {
           Btw, here is my resume for download:
         </div>
         <Link
-          className="pdf_send"
+          className="pdf_send cup"
           href={process.env.NEXT_PUBLIC_RESUME || ""}
           target="_blank"
           draggable={false}

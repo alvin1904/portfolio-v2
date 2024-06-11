@@ -24,7 +24,6 @@ body {
 a,
 button {
   all: unset;
-  cursor: pointer;
   text-decoration: none;
   color: inherit;
   background-color: transparent;
@@ -136,6 +135,9 @@ body {
   }
   .flex-row_mobile {
     flex-direction: column;
+  }
+  .cup {
+    cursor: pointer;
   }
 }
 .unselect {
@@ -355,7 +357,6 @@ body {
 }
 .pdf_send {
   width: 310px;
-  cursor: pointer;
   background: var(--accent-transparent);
   border-radius: 8px;
   padding: 2px;
@@ -438,4 +439,72 @@ body {
 .email_body textarea {
   height: calc(100% - 60px);
   width: 100%;
+}
+.visit_all {
+  background: transparent;
+  border: 1px solid var(--accent-hover);
+  color: var(--accent-hover);
+  margin-top: 30px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.visit_all:hover {
+  color: white;
+  border-color: white;
+}
+.highlight_project {
+  position: relative;
+  margin: 40px 0;
+}
+.highlight_project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.project_shade {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 5px;
+}
+.project_shade h2 {
+  font-size: 0;
+}
+.project_skills span {
+  background: var(--accent-transparent);
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+.project_skills span:hover {
+  background: var(--accent);
+}
+.project_link {
+  background: black;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+.project_link:hover {
+  background: var(--accent);
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+@media (min-width: 1200px) {
+  .project_shade {
+    padding: 1rem;
+  }
+  .project_shade h2 {
+    font-size: 3.25rem;
+  }
+  .project_skills span {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
 }
