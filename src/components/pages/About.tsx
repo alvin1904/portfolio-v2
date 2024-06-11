@@ -35,7 +35,7 @@ const About = () => {
           target="_blank"
           draggable={false}
         >
-          <div className="pdf_details flex flex-row gap-half items-center">
+          <div className="pdf_details unselect flex flex-row gap-half items-center">
             <PDF />
             <div className="flex flex-col">
               <h3>alvin_varghese_resume.pdf</h3>

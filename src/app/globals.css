@@ -138,7 +138,9 @@ body {
     flex-direction: column;
   }
 }
-
+.unselect {
+  user-select: none;
+}
 :root {
   --accent: #fd5f5f;
   --accent-transparent: #fd5f5f85;
@@ -261,7 +263,6 @@ body {
   padding: 10px 25px;
   border-radius: 20px;
   gap: 0.5rem;
-  user-select: none;
 }
 .icon_title:hover {
   background: var(--accent);
@@ -308,7 +309,6 @@ body {
   width: 350px;
   border-radius: 50%;
   padding: 40px;
-  user-select: none;
 }
 .services_card h2 {
   font-size: 1.05rem;
@@ -334,7 +334,6 @@ body {
   border-radius: 10px;
   padding: 20px 10px;
   padding-right: 20px;
-  user-select: none;
 }
 .skill_item:hover {
   background: var(--accent-transparent-high);
@@ -362,7 +361,6 @@ body {
   border-radius: 8px;
   padding: 10px;
   padding-bottom: 5px;
-  user-select: none;
 }
 .pdf_details h3 {
   font-size: 1rem;
@@ -387,4 +385,46 @@ body {
   .services_card h2 {
     font-size: 1.25rem;
   }
+}
+.email_container {
+  position: relative;
+}
+.email_line {
+  height: 50px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.email_body {
+  padding-top: 10px;
+  height: 230px;
+  border-bottom: 1px solid var(--border);
+}
+.email_footer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  padding-left: 0;
+  height: 40px;
+  border-bottom: 1px solid var(--border);
+  background: #00000020;
+  backdrop-filter: blur(2px);
+}
+.email_send {
+  height: 40px;
+  width: 120px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50px;
+}
+.email_send:hover {
+  background: var(--accent-hover);
+}
+.email_body textarea,
+.email_body input {
+  height: 100%;
+  width: 100%;
 }

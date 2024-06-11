@@ -8,7 +8,7 @@ type Props = {
 } & ChildrenPropType;
 const SkillItem = (props: Props) => {
   return (
-    <div className="skill_item lighten_shade smoothen">
+    <div className="skill_item unselect lighten_shade smoothen">
       <div className="flex flex-row items-center gap-1">
         <props.Icon />
         <span className="lighten smoothen" id="item">

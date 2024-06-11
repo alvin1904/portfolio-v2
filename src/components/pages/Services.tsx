@@ -10,7 +10,7 @@ const Services = () => {
     return (
       <div
         draggable={false}
-        className="services_card text-center smoothen border-1 flex flex-col gap-1 items-center justify-center"
+        className="services_card unselect text-center smoothen border-1 flex flex-col gap-1 items-center justify-center"
       >
         <h2 className={scothBrace.className}>{props.title}</h2>
         <p className="lighten">{props.children}</p>
