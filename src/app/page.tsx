@@ -10,9 +10,7 @@ import Contact from "@/components/pages/Contact";
 
 export default function Home() {
   const Wrapper = (props: ChildrenPropType) => (
-    <div className="section_yPadding" data-scroll-section>
-      {props.children}
-    </div>
+    <div className="section_yPadding">{props.children}</div>
   );
   return (
     <SmoothScrolling>

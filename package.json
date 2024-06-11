@@ -10,11 +10,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.47",
     "locomotive-scroll": "^4.1.4",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "react-locomotive-scroll": "^0.2.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

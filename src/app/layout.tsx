@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ChildrenPropType } from "@/types/common.types";
-import "./scroll.css";
 import "./globals.css";
 import { ginora } from "./fonts";
 

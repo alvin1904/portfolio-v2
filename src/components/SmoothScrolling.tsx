@@ -1,25 +1,21 @@
 "use client";
 
 import { ChildrenPropType } from "@/types/common.types";
-import { useRef } from "react";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 type Props = ChildrenPropType;
 
 const SmoothScrolling = (props: Props) => {
-  const containerRef = useRef(null);
+  const lenisOptions = {
+    lerp: 0.08,
+    duration: 1.7,
+    smoothTouch: false,
+    smooth: true,
+  };
   return (
-    <LocomotiveScrollProvider
-      options={{
-        smooth: true,
-      }}
-      watch={[props.children]}
-      containerRef={containerRef}
-    >
-      <main className="main" data-scroll-container>
-        {props.children}
-      </main>
-    </LocomotiveScrollProvider>
+    <ReactLenis root options={lenisOptions}>
+      <main className="main">{props.children}</main>
+    </ReactLenis>
   );
 };
 
