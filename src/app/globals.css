@@ -475,13 +475,13 @@ body {
 .project_shade h2 {
   font-size: 0;
 }
-.project_skills span {
+.project_skill {
   background: var(--accent-transparent);
   padding: 6px;
   border-radius: 10px;
   font-size: 0.75rem;
 }
-.project_skills span:hover {
+.project_skill:hover {
   background: var(--accent);
 }
 .project_link {
@@ -496,6 +496,26 @@ body {
   border-radius: 10px;
   font-size: 0.85rem;
 }
+.project_line {
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.project_heading,
+.p_year {
+  display: none;
+}
+.p_skills {
+  flex-wrap: wrap;
+}
+.p_project {
+  font-size: 1.15rem;
+}
 @media (min-width: 1200px) {
   .project_shade {
     padding: 1rem;
@@ -506,5 +526,28 @@ body {
   .project_skills span {
     font-size: 0.85rem;
     padding: 6px 10px;
+  }
+  .p_year {
+    width: 100px;
+  }
+  .p_project {
+    width: 30%;
+  }
+  .p_skills {
+    width: 35%;
+  }
+  .p_links {
+    width: 20%;
+  }
+  .project_heading,
+  .p_year {
+    display: flex;
+  }
+  .project_line {
+    min-height: 50px;
+    flex-direction: row;
+  }
+  a {
+    cursor: pointer;
   }
 }

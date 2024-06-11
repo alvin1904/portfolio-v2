@@ -13,7 +13,7 @@ export default function Home() {
     <div className="section_yPadding">{props.children}</div>
   );
   return (
-    <SmoothScrolling>
+    <>
       <PersonalSection />
       <div className="data_section">
         <Wrapper>
@@ -35,6 +35,6 @@ export default function Home() {
           <Contact />
         </Wrapper>
       </div>
-    </SmoothScrolling>
+    </>
   );
 }

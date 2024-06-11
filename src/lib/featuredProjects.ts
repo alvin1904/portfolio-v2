@@ -29,7 +29,7 @@ export const featuredProjects: ProjectType[] = [
       {
         type: "Live",
         label: "Live",
-        href: "https://www.ensemblecse.tech",
+        href: "https://ensemblecse24.vercel.app/",
       },
     ],
   },
