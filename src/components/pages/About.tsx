@@ -27,8 +27,10 @@ const About = () => {
         while embracing challenges and constantly improving to stay ahead in
         this dynamic tech landscape.
       </p>
-      <div className="ySpace flex flex-col_mobile gap-half items-center justify-between subheading">
-        <div className="lighten">Btw, here is my resume for download:</div>
+      <div className="ySpace flex flex-col items-center gap-half subheading">
+        <div className="lighten text-center">
+          Btw, here is my resume for download:
+        </div>
         <Link
           className="pdf_send"
           href={process.env.NEXT_PUBLIC_RESUME || ""}
@@ -38,7 +40,7 @@ const About = () => {
           <div className="pdf_details unselect flex flex-row gap-half items-center">
             <PDF />
             <div className="flex flex-col">
-              <h3>alvin_varghese_resume.pdf</h3>
+              <h2 className="pdf_name">alvin_varghese_resume.pdf</h2>
               <p className="pdf_p">PDF • 158kB</p>
             </div>
           </div>

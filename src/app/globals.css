@@ -273,6 +273,10 @@ body {
   margin-top: 0.05rem;
   text-transform: uppercase;
 }
+.img_container {
+  min-height: 260px;
+  min-width: 260px;
+}
 .heading {
   font-size: 3rem;
 }
@@ -305,8 +309,8 @@ body {
   flex-wrap: wrap;
 }
 .services_card {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   padding: 40px;
 }
@@ -362,7 +366,7 @@ body {
   padding: 10px;
   padding-bottom: 5px;
 }
-.pdf_details h3 {
+.pdf_details .pdf_name {
   font-size: 1rem;
   line-height: 1rem;
 }
@@ -384,6 +388,10 @@ body {
   }
   .services_card h2 {
     font-size: 1.25rem;
+  }
+  .services_card {
+    height: 350px;
+    width: 350px;
   }
 }
 .email_container {
@@ -423,8 +431,11 @@ body {
 .email_send:hover {
   background: var(--accent-hover);
 }
-.email_body textarea,
 .email_body input {
   height: 100%;
+  width: 100%;
+}
+.email_body textarea {
+  height: calc(100% - 60px);
   width: 100%;
 }

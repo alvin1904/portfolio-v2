@@ -19,14 +19,17 @@ const PersonalSection = () => {
           </div>
         </div>
         <div className="middle flex flex-col items-center justify-center gap-half text-center">
-          <Image
-            src="/alvin.webp"
-            height={310}
-            width={310}
-            alt="Alvin Varghese - Developer"
-            aria-label="Alvin Varghese - Developer"
-            draggable={false}
-          />
+          <div className="img_container">
+            <Image
+              src="/alvin.webp"
+              height={310}
+              width={310}
+              alt="Alvin Varghese - Developer"
+              aria-label="Alvin Varghese - Developer"
+              draggable={false}
+              priority
+            />
+          </div>
           <Link
             className="underline"
             href={`mailto:${process.env.NEXT_PUBLIC_MAIL}`}
