@@ -37,7 +37,10 @@ const ThemeChanger = () => {
             style={{
               borderColor: color.hex,
             }}
-            onClick={() => setAccent(color.hex)}
+            onClick={() => {
+              setAccent(color.hex);
+              toggle();
+            }}
           >
             {color.name}
           </button>

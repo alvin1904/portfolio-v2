@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Trash } from "../Icons";
+import emailjs from "@emailjs/browser";
 
 type EmailDataType = {
   name: string | null;
@@ -54,10 +55,17 @@ const EmailComponent = () => {
     if (hasError) return alert(hasError);
     try {
       setState("loading");
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        data,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
       alert("Message sent successfully!");
     } catch (err) {
       console.log(err);
     } finally {
+      setData(defaultEmail);
       setState("idle");
     }
   };
