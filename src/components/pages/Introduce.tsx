@@ -3,7 +3,7 @@ import IconTitle from "@/components/modules/IconTitle";
 
 const Introduce = () => {
   const yoi = calculateExperience();
-  const pc = process.env.NEXT_PUBLIC_PROJECT_COUNT || 20;
+  const pc = process.env.NEXT_PUBLIC_PROJECT_COUNT || 10;
   return (
     <>
       <IconTitle variant="Introduce" />

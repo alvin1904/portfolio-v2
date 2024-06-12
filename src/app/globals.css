@@ -528,7 +528,7 @@ body {
     padding: 6px 10px;
   }
   .p_year {
-    width: 100px;
+    width: 50px;
   }
   .p_project {
     width: 30%;
@@ -538,6 +538,7 @@ body {
   }
   .p_links {
     width: 20%;
+    flex-wrap: wrap;
   }
   .project_heading,
   .p_year {
@@ -550,4 +551,9 @@ body {
   a {
     cursor: pointer;
   }
+}
+::-webkit-input-placeholder,
+:-ms-input-placeholder,
+input::placeholder {
+  opacity: 0.5;
 }

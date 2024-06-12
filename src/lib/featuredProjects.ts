@@ -22,7 +22,7 @@ export const featuredProjects: ProjectType[] = [
     height: 1080,
     alt: "Ensemble CSE RIT",
     title: "Ensemble CSE Website",
-    skills: ["React Js", "Next Js", "TypeScript"],
+    skills: ["Next Js", "TypeScript"],
     links: [
       {
         type: "Github",
@@ -44,7 +44,7 @@ export const featuredProjects: ProjectType[] = [
     height: 1080,
     alt: "TEDx GEC RIT Website",
     title: "TEDx GEC RIT Website",
-    skills: ["React Js", "Next Js", "JavaScript", "Tailwind CSS"],
+    skills: ["Next Js", "JavaScript", "Tailwind CSS"],
     links: [
       {
         type: "Github",

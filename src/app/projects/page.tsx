@@ -5,7 +5,7 @@ import Link from "next/link";
 const Page = () => {
   return (
     <div className="section_yPadding ySpace">
-      <Link href="/" className="underline ySpace cup">
+      <Link href="/#Portfolio" className="underline ySpace cup">
         {"<"} Go back to portfolio
       </Link>
       <h1 className="heading ySpace">
