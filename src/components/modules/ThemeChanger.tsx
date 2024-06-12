@@ -50,7 +50,7 @@ const ThemeChanger = () => {
   );
 
   return (
-    <div
+    <aside
       className={`theme_changer smoothen ${open ? "theme_open" : "theme_close"}`}
     >
       <div className="theme_menu ">
@@ -78,7 +78,7 @@ const ThemeChanger = () => {
       >
         <Settings />
       </div>
-    </div>
+    </aside>
   );
 };
 

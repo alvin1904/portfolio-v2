@@ -1,10 +1,11 @@
+import Footer from "@/components/modules/Footer";
 import ProjectLine from "@/components/modules/ProjectLine";
 import { allProjects } from "@/lib/allProjects";
 import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="section_yPadding ySpace">
+    <div className="section_yPadding">
       <Link href="/#Portfolio" className="underline ySpace cup">
         {"<"} Go back to portfolio
       </Link>
@@ -20,6 +21,7 @@ const Page = () => {
       {allProjects.map((project, index) => (
         <ProjectLine {...project} key={index} />
       ))}
+      <Footer />
     </div>
   );
 };

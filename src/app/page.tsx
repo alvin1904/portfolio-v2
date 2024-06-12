@@ -7,6 +7,7 @@ import PersonalSection from "@/components/modules/PersonalSection";
 import { ChildrenPropType } from "@/types/common.types";
 import Projects from "@/components/pages/Projects";
 import Contact from "@/components/pages/Contact";
+import Footer from "@/components/modules/Footer";
 
 export default function Home() {
   const Wrapper = (props: ChildrenPropType) => (
@@ -34,6 +35,7 @@ export default function Home() {
         <Wrapper>
           <Contact />
         </Wrapper>
+        <Footer />
       </div>
     </>
   );
