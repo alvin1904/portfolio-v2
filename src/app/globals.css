@@ -64,7 +64,6 @@ textarea {
 :where([hidden]) {
   display: none;
 }
-
 body {
   background: #000;
   color: white;
@@ -144,11 +143,7 @@ body {
   user-select: none;
 }
 :root {
-  --accent: #fd5f5f;
-  --accent-transparent: #fd5f5f85;
-  --accent-transparent-high: #fd5f5f20;
-  --accent-hover: #ff8080;
-  --accent-dark: #7d3535;
+  --menu: #2b2b2b;
   --border: rgb(115, 115, 115);
 }
 .smoothen {
@@ -161,12 +156,12 @@ body {
   opacity: 1;
 }
 *::selection {
-  background: var(--accent);
+  background: var(--accent-transparent);
   color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 *::-moz-selection {
-  background: var(--accent);
+  background: var(--accent-transparent);
   color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -182,10 +177,11 @@ body {
   border: 1px solid var(--border);
 }
 .lighten {
-  color: var(--border);
+  color: #ffffff95;
 }
 .colorize {
   color: var(--accent);
+  transition: all 0.25s ease-in-out;
 }
 .ySpace {
   margin: 45px 0;
@@ -223,12 +219,55 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
 }
+.theme_changer {
+  height: 100vh;
+  width: 300px;
+  background: var(--menu);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 30px 20px;
+}
+.theme_toggle {
+  position: absolute;
+  top: 70px;
+  right: -40px;
+  background: var(--menu);
+  height: 40px;
+  width: 40px;
+  border-radius: 0 10px 10px 0;
+}
+.theme_toggle svg {
+  animation: rotater 3s ease-in-out infinite;
+}
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.theme_open {
+  left: 0;
+}
+.theme_close {
+  left: -300px;
+}
+.color_button {
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border-style: solid;
+  margin: 5px;
+}
 .cto {
-  background: var(--accent);
+  background: var(--accent-transparent);
   border: 1px solid var(--accent);
   color: white;
-  border-radius: 20px;
-  padding: 15px 30px;
+  border-radius: 10px;
+  padding: 12px 20px;
 }
 .cto:hover,
 .icon:hover {
@@ -421,16 +460,6 @@ body {
   background: #00000020;
   backdrop-filter: blur(2px);
 }
-.email_send {
-  height: 40px;
-  width: 120px;
-  background: var(--accent);
-  color: white;
-  border-radius: 50px;
-}
-.email_send:hover {
-  background: var(--accent-hover);
-}
 .email_body input {
   height: 100%;
   width: 100%;
@@ -438,18 +467,6 @@ body {
 .email_body textarea {
   height: calc(100% - 60px);
   width: 100%;
-}
-.visit_all {
-  background: transparent;
-  border: 1px solid var(--accent-hover);
-  color: var(--accent-hover);
-  margin-top: 30px;
-  padding: 10px 15px;
-  border-radius: 10px;
-}
-.visit_all:hover {
-  color: white;
-  border-color: white;
 }
 .highlight_project {
   position: relative;
@@ -555,9 +572,4 @@ body {
   a {
     cursor: pointer;
   }
-}
-::-webkit-input-placeholder,
-:-ms-input-placeholder,
-input::placeholder {
-  opacity: 0.5;
 }

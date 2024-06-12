@@ -3,6 +3,7 @@ import { ChildrenPropType } from "@/types/common.types";
 import "./globals.css";
 import { ginora } from "./fonts";
 import SmoothScrolling from "@/components/SmoothScrolling";
+import ThemeChanger from "@/components/modules/ThemeChanger";
 
 export const metadata: Metadata = {
   title: "Alvin Varghese",
@@ -14,7 +15,10 @@ export default function RootLayout(props: ChildrenPropType) {
   return (
     <html lang="en">
       <body className={ginora.className}>
-        <SmoothScrolling>{props.children}</SmoothScrolling>
+        <SmoothScrolling>
+          <ThemeChanger />
+          {props.children}
+        </SmoothScrolling>
       </body>
     </html>
   );

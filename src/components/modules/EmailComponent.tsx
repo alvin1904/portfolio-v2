@@ -99,14 +99,14 @@ const EmailComponent = () => {
         ></textarea>
         <div className="email_footer flex flex-row items-center justify-between">
           <button
-            className="email_send smoothen text-center unselect"
+            className="email_send cto cup smoothen text-center unselect"
             onClick={handleSend}
             disabled={state === "loading"}
           >
             {state === "loading" ? "Sending..." : "Send"}
           </button>
           {state === "typing" && (
-            <button onClick={handleClear} aria-label="Clear">
+            <button className="cup" onClick={handleClear} aria-label="Clear">
               <Trash />
             </button>
           )}

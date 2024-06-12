@@ -28,7 +28,7 @@ const Projects = () => {
 
       <Link
         href="/projects"
-        className="visit_all cup smoothen flex flex-row items-center justify-between"
+        className="cto cup smoothen flex flex-row items-center justify-between"
       >
         <span>See More</span>
         <span>

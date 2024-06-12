@@ -9,7 +9,7 @@ import {
 } from "../Icons";
 
 type SectionType =
-  | "Home"
+  | "Hey"
   | "About"
   | "Resume"
   | "Services"
@@ -24,7 +24,7 @@ type IconTitleProps = {
 };
 
 const sectionIcons: SectionIconMap = {
-  Home: Handshake,
+  Hey: Handshake,
   About: Briefcase,
   Resume: Biceps,
   Services: Briefcase,
