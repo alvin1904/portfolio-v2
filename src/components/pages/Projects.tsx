@@ -29,6 +29,7 @@ const Projects = () => {
       <Link
         href="/projects"
         className="cto cup smoothen flex flex-row items-center justify-between"
+        aria-label="All Projects"
       >
         <span>See More</span>
         <span>
