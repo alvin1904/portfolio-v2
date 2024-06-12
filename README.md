@@ -1,11 +1,9 @@
-# Portfolio v2
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![portfolio](https://github.com/alvin1904/portfolio-v2/assets/83529451/08e0b195-3613-4915-b554-148600135d48)
+# Portfolio website v2
 
 ## Getting Started
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org/) project. First, run the development server:
 
 ```bash
 npm run dev
