@@ -1,6 +1,7 @@
 import {
   Express,
   Figma,
+  GSAP,
   Js,
   Next,
   Node,
@@ -43,5 +44,10 @@ export const skills = [
     percent: 90,
     Icon: Figma,
     text: "Figma",
+  },
+  {
+    percent: 70,
+    Icon: GSAP,
+    text: "GSAP",
   },
 ];

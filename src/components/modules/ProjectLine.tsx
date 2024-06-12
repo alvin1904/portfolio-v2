@@ -6,7 +6,14 @@ const ProjectLine = (props: NormalProjectType) => {
   return (
     <div className="project_line">
       <div className="p_year unselect">{props.year}</div>
-      <div className="p_project">{props.name}</div>
+      <Link
+        target="_blank"
+        draggable={false}
+        href={props.links[0].href}
+        className="p_project"
+      >
+        {props.name}
+      </Link>
       <div className="p_skills flex flex-row items-center gap-half">
         {props.skills.map((skill, skillIndex) => (
           <Skill key={skillIndex}>{skill}</Skill>

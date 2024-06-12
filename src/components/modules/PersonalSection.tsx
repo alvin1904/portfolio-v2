@@ -57,7 +57,7 @@ const PersonalSection = () => {
             <Link
               target="_blank"
               href={
-                process.env.NEXT_PUBLIC_LINKEDIN || "https://www.github.com"
+                process.env.NEXT_PUBLIC_GITHUB || "https://www.github.com"
               }
               className="border-1 icon shadow smoothen"
               aria-label="Github - Alvin Varghese"

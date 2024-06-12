@@ -15,7 +15,7 @@ export const allProjects: NormalProjectType[] = [
   {
     year: 2023,
     name: "Ensemble Website",
-    skills: ["Next Js", "TypeScript", "CSS"],
+    skills: ["Next Js", "TypeScript", "CSS", "GSAP"],
     links: [
       {
         href: "https://github.com/alvin1904/ensemble24-website",

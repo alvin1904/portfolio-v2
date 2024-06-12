@@ -111,9 +111,6 @@ body {
 .h-screen {
   height: 100dvh;
 }
-.bg-red {
-  background: red;
-}
 .underline {
   text-decoration: underline;
 }
@@ -139,6 +136,9 @@ body {
   .cup {
     cursor: pointer;
   }
+  .w-half {
+    width: 50%;
+  }
 }
 .unselect {
   user-select: none;
@@ -151,11 +151,6 @@ body {
   --accent-dark: #7d3535;
   --border: rgb(115, 115, 115);
 }
-.shadow:hover {
-  box-shadow:
-    var(--accent-transparent) 0px 10px 36px 0px,
-    var(--accent-transparent) 0px 0px 0px 1px;
-}
 .smoothen {
   transition: all 0.25s ease-in-out;
 }
@@ -165,7 +160,6 @@ body {
 .showOnHover:hover .itemToShow {
   opacity: 1;
 }
-
 *::selection {
   background: var(--accent);
   color: white;
@@ -243,6 +237,11 @@ body {
   border-color: var(--accent);
 }
 @media (min-width: 1200px) {
+  .shadow:hover {
+    box-shadow:
+      var(--accent-transparent) 0px 10px 36px 0px,
+      var(--accent-transparent) 0px 0px 0px 1px;
+  }
   .personal_section {
     padding: 50px 50px;
     position: fixed;
@@ -266,10 +265,6 @@ body {
   border-radius: 20px;
   gap: 0.5rem;
 }
-.icon_title:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-}
 .icon_title p {
   font-size: 0.8rem;
   margin-top: 0.05rem;
@@ -291,6 +286,10 @@ body {
   color: var(--accent);
 }
 @media (min-width: 1200px) {
+  .icon_title:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
   .w-40 {
     width: 40%;
   }
@@ -510,8 +509,10 @@ body {
 .p_year {
   display: none;
 }
-.p_skills {
+.p_skills,
+.p_links {
   flex-wrap: wrap;
+  justify-content: center;
 }
 .p_project {
   font-size: 1.15rem;
@@ -538,11 +539,14 @@ body {
   }
   .p_links {
     width: 20%;
-    flex-wrap: wrap;
   }
   .project_heading,
   .p_year {
     display: flex;
+  }
+  .p_skills,
+  .p_links {
+    justify-content: flex-start;
   }
   .project_line {
     min-height: 50px;

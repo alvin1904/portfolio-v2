@@ -6,11 +6,10 @@ const Introduce = () => {
   const pc = process.env.NEXT_PUBLIC_PROJECT_COUNT || 10;
   return (
     <>
-      <IconTitle variant="Introduce" />
       <h1 className="heading">
         Hey I am <span className="colorize">Alvin Varghese</span>, Web Developer
       </h1>
-      <p className="subheading lighten ySpace">
+      <p className="subheading lighten ySpace w-half">
         I design and code beautiful websites for fun and work. Just what I enjoy
         and love doing!
       </p>
