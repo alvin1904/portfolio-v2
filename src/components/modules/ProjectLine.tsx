@@ -1,5 +1,6 @@
 import { NormalProjectType } from "@/lib/allProjects";
 import Link from "next/link";
+import Skill from "./Skill";
 
 const ProjectLine = (props: NormalProjectType) => {
   return (
@@ -8,9 +9,7 @@ const ProjectLine = (props: NormalProjectType) => {
       <div className="p_project">{props.name}</div>
       <div className="p_skills flex flex-row items-center gap-half">
         {props.skills.map((skill, skillIndex) => (
-          <span key={skillIndex} className="project_skill smoothen cup unselect">
-            {skill}
-          </span>
+          <Skill key={skillIndex}>{skill}</Skill>
         ))}
       </div>
       <div className="p_links flex flex-row items-center gap-half unselect">

@@ -1,3 +1,5 @@
+import { Github2, Present } from "@/components/Icons";
+
 export interface ProjectType {
   src: string;
   width: number;
@@ -9,6 +11,7 @@ export interface ProjectType {
     type: "Github" | "Live";
     label: string;
     href: string;
+    icon: () => JSX.Element;
   }[];
 }
 
@@ -25,11 +28,13 @@ export const featuredProjects: ProjectType[] = [
         type: "Github",
         label: "Github",
         href: "https://github.com/alvin1904/ensemble24-website",
+        icon: Github2,
       },
       {
         type: "Live",
         label: "Live",
         href: "https://ensemblecse24.vercel.app/",
+        icon: Present,
       },
     ],
   },
@@ -45,11 +50,13 @@ export const featuredProjects: ProjectType[] = [
         type: "Github",
         label: "Github",
         href: "https://github.com/alvin1904/tedxgecrit23",
+        icon: Github2,
       },
       {
         type: "Live",
         label: "Live",
         href: "https://tedxgecrit.vercel.app/",
+        icon: Present,
       },
     ],
   },
