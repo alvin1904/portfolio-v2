@@ -3,6 +3,7 @@
 import { darken, lighten } from "@/lib/utils/color";
 import { useEffect, useState, useCallback, useMemo } from "react";
 import { Settings } from "../Icons";
+import Link from "next/link";
 
 const colors = [
   { name: "bittersweet", hex: "#FD5F5F" },
@@ -49,11 +50,22 @@ const ThemeChanger = () => {
     <div
       className={`theme_changer smoothen ${open ? "theme_open" : "theme_close"}`}
     >
-      <div className="theme_menu y_space">
+      <div className="theme_menu ">
         <h1 className="heading">Colors</h1>
         {colorButtons}
       </div>
-      
+      <div className="theme_menu ySpace">
+        <h1 className="heading">GoTo</h1>
+        <div className="nav_list flex flex-col gap-half underline">
+          <Link href="/">Home</Link>
+          <Link href="/#About">About</Link>
+          <Link href="/#Services">Services</Link>
+          <Link href="/#Skills">Skills</Link>
+          <Link href="/#Portfolio">Portfolio</Link>
+          <Link href="/#Contact">Contact</Link>
+        </div>
+      </div>
+
       <div className="cup underline ySpace text-center" onClick={toggle}>
         Close
       </div>

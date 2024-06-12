@@ -573,3 +573,8 @@ body {
     cursor: pointer;
   }
 }
+.nav_list {
+  list-style: disc;
+  padding-left: 35px;
+  padding-top: 10px;
+}
