@@ -11,8 +11,9 @@ const Introduce = () => {
         I am <span className="colorize">Alvin Varghese</span>, Web Developer
       </h1>
       <p className="subheading lighten ySpace w-half">
-        I design and code beautiful websites for fun and work. Just what I enjoy
-        and love doing!
+        Whether you want a website that packs a punch or in need of a sleek and
+        polished site, I've got the skills and creativity to make your vision a
+        reality.
       </p>
       <div className="ySpace count_section flex flex-row gap-1 items-center">
         <div className="count flex flex-col">

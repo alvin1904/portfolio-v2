@@ -7,30 +7,26 @@ const About = () => {
     <>
       <IconTitle variant="About" />
       <h1 className="about_heading ySpace">
-        Since diving into <span className="colorize">web design</span> and{" "}
-        <span className="colorize">development</span> in 2023, my passion has
-        only deepened with each project.
+        My portfolio is a reflection of my love of crafting beautiful and
+        functional websites that are as enjoyable to look at as they are to use.
       </h1>
       <p className="subheading lighten ySpace">
-        Starting as a graphic designer, I designed dynamic social media
-        templates and posters for various institutions during my college years.
-        Now, I integrate my design background into development to create unique,
-        high-quality solutions.
+        As a web developer, I bring a unique blend of design and development
+        skills to every project. With a background in graphic design, I create
+        websites that not only function seamlessly, but also boast stunning
+        visuals that capture the essence of your brand or project.
       </p>
       <p className="subheading lighten">
-        On my{" "}
+        My{" "}
         <Link className="colorize underline" href="#Portfolio">
           portfolio
-        </Link>
-        , you'll find a collection of diverse projects that showcase my
-        creativity and professionalism. I am committed to pushing boundaries
-        while embracing challenges and constantly improving to stay ahead in
-        this dynamic tech landscape.
+        </Link>{" "}
+        showcases a wide range of skills and expertise. I'm constantly pushing
+        boundaries, embracing challenges, and refining my craft to deliver
+        exceptional web solutions that exceed expectations.
       </p>
       <div className="ySpace flex flex-col items-center gap-half subheading">
-        <div className="lighten text-center">
-          Btw, here is my resume for download:
-        </div>
+        <div className="lighten text-center">Btw, here is my resume</div>
         <Link
           className="pdf_send cup"
           href={process.env.NEXT_PUBLIC_RESUME || ""}

@@ -22,16 +22,16 @@ const Services = () => {
       <IconTitle variant="Services" />
       <div className="services_container flex flex-row items-center justify-center gap-2">
         <Round title="Web Design & Development">
-          I craft bespoke websites that exceed your expectations, powered by
-          React Js/Next Js.
+          Craft bespoke websites that exceed your expectations, powered by React
+          Js/Next Js.
         </Round>
         <Round title="Web Optimization & Performance">
           Enhance your site's performance and efficiency with cutting-edge
           techniques.
         </Round>
         <Round title="Web Deployment & Hosting">
-          I can manage your web deployment and hosting needs effortlessly,
-          whether through GitHub Actions or any preferred cloud provider.
+          Manage your web deployment and hosting needs effortlessly, through
+          GitHub Actions or any preferred cloud provider.
         </Round>
       </div>
     </>

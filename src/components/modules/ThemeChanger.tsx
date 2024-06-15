@@ -59,7 +59,7 @@ const ThemeChanger = () => {
       </div>
       <div className="theme_menu ySpace">
         <h1 className="heading">GoTo</h1>
-        <div className="nav_list flex flex-col gap-half underline">
+        <div className="nav_list flex flex-col gap-1 underline smoothen">
           <Link href="/">Home</Link>
           <Link href="/#About">About</Link>
           <Link href="/#Services">Services</Link>

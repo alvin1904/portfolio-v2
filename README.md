@@ -1,4 +1,5 @@
 ![portfolio](https://github.com/alvin1904/portfolio-v2/assets/83529451/08e0b195-3613-4915-b554-148600135d48)
+
 # Portfolio website v2
 
 ## Getting Started
@@ -21,4 +22,4 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ## Project Photos
 
-Dimensions: 1620 * 1080 @ 300dpi
+Dimensions: 1620 \* 1080 @ 300dpi

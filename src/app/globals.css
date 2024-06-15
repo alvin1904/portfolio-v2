@@ -296,7 +296,6 @@ body {
 }
 .section_yPadding {
   padding: 30px;
-  padding-top: 0px;
 }
 .icon_title {
   width: fit-content;
@@ -575,6 +574,9 @@ body {
 }
 .nav_list {
   list-style: disc;
-  padding-left: 35px;
+  padding-left: 20px;
   padding-top: 10px;
+}
+.nav_list a:hover {
+  color: var(--accent-transparent);
 }
