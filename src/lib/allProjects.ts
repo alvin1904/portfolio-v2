@@ -23,8 +23,6 @@ export interface ProjectType {
 export const Ensemble: ProjectType = {
   year: 2023,
   src: "/projects/ensemble.webp",
-  width: 1620,
-  height: 1080,
   name: "Ensemble CSE Website",
   skills: ["Next Js", "TypeScript", "GSAP"],
   links: [
@@ -41,13 +39,12 @@ export const Ensemble: ProjectType = {
       icon: Present(),
     },
   ],
+  ...common,
 };
 
 export const TEDX: ProjectType = {
   year: 2023,
   src: "/projects/tedxgecrit.webp",
-  width: 1620,
-  height: 1080,
   name: "TEDx GEC RIT Website",
   skills: ["Next Js", "JavaScript", "Tailwind CSS"],
   links: [
@@ -64,122 +61,133 @@ export const TEDX: ProjectType = {
       icon: Present(),
     },
   ],
+  ...common,
+};
+
+const Password: ProjectType = {
+  year: 2023,
+  src: "/projects/password.webp",
+  name: "Generate Ur Password",
+  skills: ["Svelte", "JavaScript", "CSS"],
+  links: [
+    {
+      type: "Github",
+      href: "https://github.com/alvin1904/generate-ur-password",
+      label: "Github",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      href: "https://generate-ur-password.netlify.app/",
+      label: "View",
+      icon: Present(),
+    },
+  ],
+  ...common,
+};
+
+const SkillVine: ProjectType = {
+  year: 2023,
+  name: "SkillVine",
+  src: "/projects/skillvine.webp",
+  skills: ["Next Js", "CSS", "Axios", "jsPDF"],
+  links: [
+    {
+      type: "Github",
+      href: "https://github.com/alvin1904/skillvine-client",
+      label: "Github",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      href: "https://rit.skillvine.tech/",
+      label: "View",
+      icon: Present(),
+    },
+  ],
+  ...common,
+};
+
+const Ragam: ProjectType = {
+  year: 2023,
+  name: "Ragam - Music Streaming",
+  src: "/projects/ragam.webp",
+  skills: ["React Js", "Next Js", "CSS", "React Spring", "Axios", "Vite"],
+  links: [
+    {
+      type: "Github",
+      href: "https://github.com/alvin1904/ragam-client",
+      label: "Github",
+      icon: Github2(),
+    },
+    {
+      type: "Github",
+      href: "https://github.com/alvin1904/ragam-companion",
+      label: "Companion App",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      href: "https://ragam.netlify.app/",
+      label: "View",
+      icon: Present(),
+    },
+    {
+      type: "Live",
+      href: "https://ragam-companion.netlify.app",
+      label: "Companion website",
+      icon: Present(),
+    },
+  ],
+  ...common,
+};
+
+const Shortly: ProjectType = {
+  year: 2022,
+  name: "Shortly - URL Shortener",
+  src: "",
+  skills: ["React Js", "CSS", "Firebase"],
+  links: [
+    {
+      type: "Github",
+      href: "https://github.com/alvin1904/url-shortener",
+      label: "Github",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      href: "https://url-shortener-8b7d8.web.app/",
+      label: "View",
+      icon: Present(),
+    },
+  ],
+  ...common,
+};
+
+const Advice: ProjectType = {
+  year: 2022,
+  name: "Advice Generator",
+  src: "",
+  skills: ["React Js", "CSS"],
+  links: [
+    {
+      type: "Github",
+      href: "https://github.com/alvin1904/advice-generator",
+      label: "Github",
+      icon: Github2(),
+    },
+  ],
+  ...common,
 };
 
 export const allProjects: ProjectType[] = [
   Ensemble,
   TEDX,
-  {
-    year: 2023,
-    name: "Generate Ur Password",
-    src: "",
-    skills: ["Svelte", "JavaScript", "CSS"],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/alvin1904/generate-ur-password",
-        label: "Github",
-        icon: Github2(),
-      },
-      {
-        type: "Live",
-        href: "https://generate-ur-password.netlify.app/",
-        label: "View",
-        icon: Present(),
-      },
-    ],
-    ...common,
-  },
-  {
-    year: 2023,
-    name: "SkillVine",
-    src: "",
-    skills: ["Next Js", "CSS", "Axios", "jsPDF"],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/alvin1904/skillvine-client",
-        label: "Github",
-        icon: Github2(),
-      },
-      {
-        type: "Live",
-        href: "https://rit.skillvine.tech/",
-        label: "View",
-        icon: Present(),
-      },
-    ],
-    ...common,
-  },
-  {
-    year: 2023,
-    name: "Ragam - Music Streaming",
-    src: "",
-    skills: ["React Js", "Next Js", "CSS", "React Spring", "Axios", "Vite"],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/alvin1904/ragam-client",
-        label: "Github",
-        icon: Github2(),
-      },
-      {
-        type: "Github",
-        href: "https://github.com/alvin1904/ragam-companion",
-        label: "Companion App",
-        icon: Github2(),
-      },
-      {
-        type: "Live",
-        href: "https://ragam.netlify.app/",
-        label: "View",
-        icon: Present(),
-      },
-      {
-        type: "Live",
-        href: "https://ragam-companion.netlify.app",
-        label: "Companion website",
-        icon: Present(),
-      },
-    ],
-    ...common,
-  },
-  {
-    year: 2022,
-    name: "Shortly - URL Shortener",
-    src: "",
-    skills: ["React Js", "CSS", "Firebase"],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/alvin1904/url-shortener",
-        label: "Github",
-        icon: Github2(),
-      },
-      {
-        type: "Live",
-        href: "https://url-shortener-8b7d8.web.app/",
-        label: "View",
-        icon: Present(),
-      },
-    ],
-    ...common,
-  },
-  {
-    year: 2022,
-    name: "Advice Generator",
-    src: "",
-    skills: ["React Js", "CSS"],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/alvin1904/advice-generator",
-        label: "Github",
-        icon: Github2(),
-      },
-    ],
-    ...common,
-  },
+  Password,
+  SkillVine,
+  Ragam,
+  Shortly,
+  Advice,
 ];
 
 export const featuredProjects: ProjectType[] = [Ensemble, TEDX];
