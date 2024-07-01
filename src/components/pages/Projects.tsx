@@ -14,7 +14,7 @@ const Projects = () => {
       </h1>
 
       {featuredProjects.map((project) => (
-        <FeaturedProject {...project} />
+        <FeaturedProject {...project} key={project.src} />
       ))}
 
       <Link

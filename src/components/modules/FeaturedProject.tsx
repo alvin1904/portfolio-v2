@@ -30,7 +30,7 @@ const FeaturedProject = (props: ProjectType) => {
               href={githubDetails.href}
               className="project_link border-1 flex flex-row items-center gap-half cup smoothen unselect"
             >
-              {<githubDetails.icon />}
+              {githubDetails.icon}
               <span>{githubDetails.label}</span>
             </Link>
             <Link
@@ -39,7 +39,7 @@ const FeaturedProject = (props: ProjectType) => {
               href={liveDetails.href}
               className="project_link border-1 flex flex-row items-center gap-half cup smoothen unselect"
             >
-              {<liveDetails.icon />}
+              {liveDetails.icon}
               <span>{liveDetails.label}</span>
             </Link>
           </div>
