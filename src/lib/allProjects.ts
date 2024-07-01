@@ -42,6 +42,28 @@ export const Ensemble: ProjectType = {
   ...common,
 };
 
+export const Ghostchats: ProjectType = {
+  year: 2023,
+  src: "/projects/ghostchats.webp",
+  name: "Ghostchats - RT Chat Website",
+  skills: ["Next Js", "TypeScript", "Socket IO"],
+  links: [
+    {
+      type: "Github",
+      label: "Github",
+      href: "https://github.com/alvin1904/ghostchats",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      label: "Live",
+      href: "https://ghostchats.vercel.app/",
+      icon: Present(),
+    },
+  ],
+  ...common,
+};
+
 export const TEDX: ProjectType = {
   year: 2023,
   src: "/projects/tedxgecrit.webp",
@@ -182,12 +204,13 @@ const Advice: ProjectType = {
 
 export const allProjects: ProjectType[] = [
   Ensemble,
+  Ghostchats,
   TEDX,
-  Password,
   SkillVine,
   Ragam,
+  Password,
   Shortly,
   Advice,
 ];
 
-export const featuredProjects: ProjectType[] = [Ensemble, TEDX];
+export const featuredProjects: ProjectType[] = [Ensemble, Ghostchats,TEDX];
