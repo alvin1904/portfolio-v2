@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import IconTitle from "../modules/IconTitle";
-import { featuredProjects } from "@/lib/featuredProjects";
 import FeaturedProject from "../modules/FeaturedProject";
+import { featuredProjects } from "@/lib/allProjects";
 
 const Projects = () => {
   return (
@@ -14,16 +14,7 @@ const Projects = () => {
       </h1>
 
       {featuredProjects.map((project) => (
-        <FeaturedProject
-          height={project.height}
-          width={project.width}
-          alt={project.alt}
-          links={project.links}
-          skills={project.skills}
-          src={project.src}
-          title={project.title}
-          key={project.src}
-        />
+        <FeaturedProject {...project} />
       ))}
 
       <Link

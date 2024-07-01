@@ -1,139 +1,185 @@
 import { Github2, Present } from "./../components/Icons";
 
-export interface NormalProjectType {
-  year: number;
+const common = {
+  height: 1080,
+  width: 1620,
+};
+
+export interface ProjectType {
+  src: string;
+  width: number;
+  height: number;
   name: string;
   skills: string[];
+  year: number;
   links: {
-    href: string;
+    type: "Github" | "Live";
     label: string;
-    icon: () => JSX.Element;
+    href: string;
+    icon: any;
   }[];
 }
 
-export const allProjects: NormalProjectType[] = [
-  {
-    year: 2023,
-    name: "Ensemble Website",
-    skills: ["Next Js", "TypeScript", "CSS", "GSAP"],
-    links: [
-      {
-        href: "https://github.com/alvin1904/ensemble24-website",
-        label: "Github",
-        icon: Github2,
-      },
-      {
-        href: "https://ensemblecse24.vercel.app/",
-        label: "View",
-        icon: Present,
-      },
-    ],
-  },
+export const Ensemble: ProjectType = {
+  year: 2023,
+  src: "/projects/ensemble.webp",
+  width: 1620,
+  height: 1080,
+  name: "Ensemble CSE Website",
+  skills: ["Next Js", "TypeScript", "GSAP"],
+  links: [
+    {
+      type: "Github",
+      label: "Github",
+      href: "https://github.com/alvin1904/ensemble24-website",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      label: "Live",
+      href: "https://ensemblecse24.vercel.app/",
+      icon: Present(),
+    },
+  ],
+};
+
+export const TEDX: ProjectType = {
+  year: 2023,
+  src: "/projects/tedxgecrit.webp",
+  width: 1620,
+  height: 1080,
+  name: "TEDx GEC RIT Website",
+  skills: ["Next Js", "JavaScript", "Tailwind CSS"],
+  links: [
+    {
+      type: "Github",
+      label: "Github",
+      href: "https://github.com/alvin1904/tedxgecrit23",
+      icon: Github2(),
+    },
+    {
+      type: "Live",
+      label: "Live",
+      href: "https://tedxgecrit.vercel.app/",
+      icon: Present(),
+    },
+  ],
+};
+
+export const allProjects: ProjectType[] = [
+  Ensemble,
+  TEDX,
   {
     year: 2023,
     name: "Generate Ur Password",
+    src: "",
     skills: ["Svelte", "JavaScript", "CSS"],
     links: [
       {
+        type: "Github",
         href: "https://github.com/alvin1904/generate-ur-password",
         label: "Github",
-        icon: Github2,
+        icon: Github2(),
       },
       {
+        type: "Live",
         href: "https://generate-ur-password.netlify.app/",
         label: "View",
-        icon: Present,
+        icon: Present(),
       },
     ],
-  },
-  {
-    year: 2023,
-    name: "TEDx GECRIT Website",
-    skills: ["Next Js", "JavaScript", "Tailwind CSS"],
-    links: [
-      {
-        href: "https://github.com/alvin1904/tedxgecrit23",
-        label: "Github",
-        icon: Github2,
-      },
-      {
-        href: "https://www.tedxgecrit.com/",
-        label: "View",
-        icon: Present,
-      },
-    ],
+    ...common,
   },
   {
     year: 2023,
     name: "SkillVine",
+    src: "",
     skills: ["Next Js", "CSS", "Axios", "jsPDF"],
     links: [
       {
+        type: "Github",
         href: "https://github.com/alvin1904/skillvine-client",
         label: "Github",
-        icon: Github2,
+        icon: Github2(),
       },
       {
+        type: "Live",
         href: "https://rit.skillvine.tech/",
         label: "View",
-        icon: Present,
+        icon: Present(),
       },
     ],
+    ...common,
   },
   {
     year: 2023,
     name: "Ragam - Music Streaming",
+    src: "",
     skills: ["React Js", "Next Js", "CSS", "React Spring", "Axios", "Vite"],
     links: [
       {
+        type: "Github",
         href: "https://github.com/alvin1904/ragam-client",
         label: "Github",
-        icon: Github2,
+        icon: Github2(),
       },
       {
+        type: "Github",
         href: "https://github.com/alvin1904/ragam-companion",
         label: "Companion App",
-        icon: Github2,
+        icon: Github2(),
       },
       {
+        type: "Live",
         href: "https://ragam.netlify.app/",
         label: "View",
-        icon: Present,
+        icon: Present(),
       },
       {
+        type: "Live",
         href: "https://ragam-companion.netlify.app",
         label: "Companion website",
-        icon: Present,
+        icon: Present(),
       },
     ],
+    ...common,
   },
   {
     year: 2022,
     name: "Shortly - URL Shortener",
+    src: "",
     skills: ["React Js", "CSS", "Firebase"],
     links: [
       {
+        type: "Github",
         href: "https://github.com/alvin1904/url-shortener",
         label: "Github",
-        icon: Github2,
+        icon: Github2(),
       },
       {
+        type: "Live",
         href: "https://url-shortener-8b7d8.web.app/",
         label: "View",
-        icon: Present,
+        icon: Present(),
       },
     ],
+    ...common,
   },
   {
     year: 2022,
     name: "Advice Generator",
+    src: "",
     skills: ["React Js", "CSS"],
     links: [
       {
+        type: "Github",
         href: "https://github.com/alvin1904/advice-generator",
         label: "Github",
-        icon: Github2,
+        icon: Github2(),
       },
     ],
+    ...common,
   },
 ];
+
+export const featuredProjects: ProjectType[] = [Ensemble, TEDX];

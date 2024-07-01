@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { ProjectType } from "@/lib/featuredProjects";
 import Link from "next/link";
 import Skill from "./Skill";
+import { ProjectType } from "@/lib/allProjects";
 
 const FeaturedProject = (props: ProjectType) => {
   const liveDetails = props.links[1];
@@ -12,11 +12,11 @@ const FeaturedProject = (props: ProjectType) => {
         src={props.src}
         width={props.width}
         height={props.height}
-        alt={props.alt}
+        alt={props.name}
       />
 
       <div className="project_shade flex flex-col">
-        <h2>{props.title}</h2>
+        <h2>{props.name}</h2>
         <div className="flex flex-col_mobile items-center justify-between gap-half">
           <div className="project_skills flex gap-half">
             {props.skills.map((skill, index) => (
